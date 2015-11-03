@@ -11,3 +11,6 @@ libraryDependencies += "org.reactivemongo" %% "play2-reactivemongo" % "0.11.0.pl
 routesGenerator := InjectedRoutesGenerator
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
+
+
+fork in run := true

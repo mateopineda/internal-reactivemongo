@@ -1,0 +1,19 @@
+@(id: Option[String], form: Form[models.Movement], files: Option[List[(play.api.libs.json.JsString, reactivemongo.api.gridfs.ReadFile[play.modules.reactivemongo.json.JSONSerializationPack.type, play.api.libs.json.JsString])]])(implicit lang: play.api.i18n.Messages)
+
+@main("Welcome to ReactiveMongo on Play 2.4") {
+  <div class="row">
+  <div class="span8">
+  <h2>
+    @if(!id.isDefined) {
+      Add
+    } else {
+      Edit
+    } an movement</h2>
+  @helper.form(action = (if(!id.isDefined) routes.Movements.create else routes.Movements.index), 'class -> "form-horizontal") {
+    @helper.inputText(form("valueMovement"))
+    @helper.textarea(form("description"))
+    <div class="form-actions">
+      <input class="btn btn-primary" type="submit">
+    </div>
+  }
+}

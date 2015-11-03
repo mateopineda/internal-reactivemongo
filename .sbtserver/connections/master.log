@@ -1,0 +1,43 @@
+New log file opened at Tue Nov 03 02:40:06 COT 2015 by 8164@mateo-Vostro-3400
+Taking next connection to: 45536
+New client attempting to connect on port: 38632-45536
+  Address = /127.0.1.1:45536
+This client on port 38632 has uuid 71dbc782-61af-4e53-a01e-5929bf707f2d configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-71dbc782-61af-4e53-a01e-5929bf707f2d
+Taking next connection to: 45536
+New client attempting to connect on port: 38633-45536
+  Address = /127.0.1.1:45536
+Handshake exception on socket: 38633
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 45536
+New client attempting to connect on port: 38634-45536
+  Address = /127.0.1.1:45536
+This client on port 38634 has uuid 245e6bee-f6ac-4dc9-8b06-737df1238298 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-71dbc782-61af-4e53-a01e-5929bf707f2d, activator-245e6bee-f6ac-4dc9-8b06-737df1238298
+Taking next connection to: 45536
+New client attempting to connect on port: 38635-45536
+  Address = /127.0.1.1:45536
+Handshake exception on socket: 38635
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 45536
+New client attempting to connect on port: 38636-45536
+  Address = /127.0.1.1:45536
+This client on port 38636 has uuid 0619097e-2dac-41ad-801b-d72a94876061 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-71dbc782-61af-4e53-a01e-5929bf707f2d, activator-245e6bee-f6ac-4dc9-8b06-737df1238298, play-fork-run-0619097e-2dac-41ad-801b-d72a94876061
+Taking next connection to: 45536

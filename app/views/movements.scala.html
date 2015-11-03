@@ -1,0 +1,21 @@
+@(movements: List[models.Movement], activeSort: String)
+
+@main("Welcome to Play 2.0") {
+  <div class="row">
+    <div class="span12">
+      <h2>Available movements</h2>
+      @if(movements.isEmpty) {
+        <p>No movements available yet.</p>
+      } else {
+      <ul>
+      @movements.map { movement =>
+        <li><a>@movement.valueMovement</a> <em>by @movement.description</em></li>
+      }
+      </ul>
+      }
+      <div>
+        <a href="@routes.Movements.showCreationForm">Create</a>
+      </div>
+    </div>
+  </div>
+}
